@@ -1,0 +1,29 @@
+.icon-notif{
+    font-size: 20px;
+}
+.icon-notif a:hover{
+    color: #ffffff !important;
+}
+.sidebar{
+    height: 100vh;
+}
+.fw{
+    width: 25px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.nav-link:hover, .nav-link.active{
+    background-color: #0dcaf0;
+    color: #000;
+}
+.icon-card{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 100px;
+    opacity: 0.5;
+}
+
+
+

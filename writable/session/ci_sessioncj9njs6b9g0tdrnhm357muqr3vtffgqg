@@ -1,0 +1,4 @@
+__ci_last_regenerate|i:1668394977;_ci_previous_url|s:27:"http://localhost:8080/siswa";siswa|s:287:"<div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Data siswa berhasil ditambahkan ke dalam database.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>";__ci_vars|a:1:{s:5:"siswa";s:3:"old";}

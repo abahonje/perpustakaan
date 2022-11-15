@@ -1,0 +1,199 @@
+ERROR - 2022-10-25 20:30:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-10-25 20:31:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-10-25 20:32:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Config::forge()
+#4 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:create', Array)
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#11 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2022-10-25 21:49:48 --> mysqli_sql_exception: Unknown table 'perpus.siswa' in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DROP TABLE `sis...', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `sis...')
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `sis...')
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Forge.php(600): CodeIgniter\Database\BaseConnection->query('DROP TABLE `sis...')
+#4 E:\project\perpustakaan\app\Database\Migrations\2022-10-26-014251_Siswa.php(49): CodeIgniter\Database\Forge->dropTable('siswa')
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Siswa->down()
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(298): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+ERROR - 2022-10-25 22:27:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	`nama` VARCHAR(30) NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	`e...' at line 3 in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `u...', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 E:\project\perpustakaan\app\Database\Migrations\2022-10-26-024752_User.php(37): CodeIgniter\Database\Forge->createTable('user')
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\User->up()
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-10-25 22:32:05 --> mysqli_sql_exception: Can't create table `perpus`.`peminjaman` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\project\perpustakaan\app\Database\Migrations\2022-10-26-024824_Peminjaman.php(46): CodeIgniter\Database\Forge->createTable('peminjaman')
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Peminjaman->up()
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-10-25 22:40:12 --> mysqli_sql_exception: Can't create table `perpus`.`peminjaman` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\project\perpustakaan\app\Database\Migrations\2022-10-26-024824_Peminjaman.php(47): CodeIgniter\Database\Forge->createTable('peminjaman')
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Peminjaman->up()
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-10-25 22:44:52 --> mysqli_sql_exception: Can't create table `perpus`.`peminjaman` (errno: 150 "Foreign key constraint is incorrectly formed") in E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\project\perpustakaan\app\Database\Migrations\2022-10-26-024824_Peminjaman.php(50): CodeIgniter\Database\Forge->createTable('peminjaman')
+#5 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(868): App\Database\Migrations\Peminjaman->up()
+#6 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\project\perpustakaan\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 E:\project\perpustakaan\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 E:\project\perpustakaan\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}

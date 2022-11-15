@@ -1,0 +1,12 @@
+CRITICAL - 2022-11-07 21:43:05 --> Undefined property: CodeIgniter\View\View::$validation
+in APPPATH\Views\Siswa\create.php on line 8.
+ 1 APPPATH\Views\Siswa\create.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$validation', 'APPPATH\\Views\\Siswa\\create.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Siswa\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('siswa/create', [], true)
+ 5 APPPATH\Controllers\Siswa.php(35): view('siswa/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Siswa->create()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
