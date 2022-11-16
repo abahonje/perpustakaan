@@ -40,6 +40,9 @@ $routes->get('/siswa', 'Siswa::index');
 $routes->post('/siswa', 'Siswa::save');
 $routes->get('/siswa/create', 'Siswa::create');
 $routes->post('/siswa/getSiswaById', 'Siswa::getSiswaById');
+$routes->get('/siswa/(:num)/edit', 'Siswa::edit');
+$routes->get('/siswa/(:num)/delete', 'Siswa::delete');
+$routes->post('/siswa/update', 'Siswa::update');
 
 /*
  * --------------------------------------------------------------------
