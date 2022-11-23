@@ -35,14 +35,31 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+// Siswa
 $routes->get('/', 'Admin::index'); //localhost:8080
 $routes->get('/siswa', 'Siswa::index');
 $routes->post('/siswa', 'Siswa::save');
 $routes->get('/siswa/create', 'Siswa::create');
 $routes->post('/siswa/getSiswaById', 'Siswa::getSiswaById');
-$routes->get('/siswa/(:num)/edit', 'Siswa::edit');
 $routes->get('/siswa/(:num)/delete', 'Siswa::delete');
+$routes->get('/siswa/(:num)/edit', 'Siswa::edit');
 $routes->post('/siswa/update', 'Siswa::update');
+
+// Kategori
+$routes->get('/kategori', 'Kategori::index');
+$routes->get('/kategori/create', 'Kategori::create');
+$routes->post('/kategori/save', 'Kategori::save');
+$routes->get('/kategori/(:num)/edit', 'Kategori::edit');
+$routes->get('/kategori/(:num)/delete', 'Kategori::delete');
+$routes->post('/kategori/update', 'Kategori::update');
+
+// Buku
+$routes->get('/buku', 'Buku::index');
+$routes->get('/buku/create', 'Buku::create');
+$routes->post('/buku/save', 'Buku::save');
+$routes->get('/buku/(:num)/edit', 'Buku::edit');
+$routes->post('/buku/update', 'Buku::update');
+$routes->get('/buku/(:num)/delete', 'Buku::delete');
 
 /*
  * --------------------------------------------------------------------
