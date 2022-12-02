@@ -61,6 +61,13 @@ $routes->get('/buku/(:num)/edit', 'Buku::edit');
 $routes->post('/buku/update', 'Buku::update');
 $routes->get('/buku/(:num)/delete', 'Buku::delete');
 
+// Peminjaman
+$routes->get('/peminjaman', 'Peminjaman::index');
+$routes->post('/peminjaman', 'Peminjaman::save');
+$routes->get('/peminjaman/(:num)/kembali', 'Peminjaman::kembali');
+$routes->get('/peminjaman/(:num)/delete', 'Peminjaman::delete');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
